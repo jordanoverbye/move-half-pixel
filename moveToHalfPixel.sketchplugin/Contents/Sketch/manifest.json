@@ -1,0 +1,14 @@
+{
+  "name": "Move to half pixel",
+  "description": "Move layers half a pixel",
+  "author": "Standing By Company",
+  "homepage": "http://standingby.co",
+  "version": 1.0,
+  "compatibleVersion": 3.4,
+  "bundleVersion": 1,
+  "commands": [{
+    "name": "Move to half pixel",
+    "shortcut": "ctrl m",
+    "script": "move.cocoascript",
+  }]
+}

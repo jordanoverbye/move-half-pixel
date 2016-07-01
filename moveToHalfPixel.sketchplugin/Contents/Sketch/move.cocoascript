@@ -1,0 +1,15 @@
+var onRun = function (context) {
+  var selection = context.selection;
+  var selectionLoop = selection.objectEnumerator()
+		while (item = selectionLoop.nextObject()) {
+			var layer = item;
+    	var frame = [layer frame];
+    	var y = [frame y];
+      if(Math.floor(y) != y) {
+      	yUpdated = Math.floor(y) + 0.5;
+      } else {
+      	yUpdated = y - 0.5;
+      }
+      [frame setY:yUpdated];
+    }
+}
