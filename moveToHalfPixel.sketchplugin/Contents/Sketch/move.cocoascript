@@ -5,10 +5,11 @@ var onRun = function (context) {
 			var layer = item;
     	var frame = [layer frame];
     	var y = [frame y];
-      if(Math.floor(y) != y) {
-      	yUpdated = Math.floor(y) + 0.5;
+      var yFloor = Math.floor(y);
+      if(yFloor == y) {
+      	yUpdated = y + 0.5;
       } else {
-      	yUpdated = y - 0.5;
+      	yUpdated = yFloor;
       }
       [frame setY:yUpdated];
     }
